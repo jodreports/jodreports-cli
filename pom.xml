@@ -29,9 +29,9 @@
   </licenses>
 
   <scm>
-    <url>http://jodreports.svn.sourceforge.net</url>
-    <connection>scm:svn:https://jodreports.svn.sourceforge.net/svnroot/jodreports/trunk/jodreports-cli</connection>
-  </scm>
+     <connection>scm:git:git@github.com:delightful-business-documents/jodreports-cli.git</connection>
+     <developerConnection>scm:git:git@github.com:delightful-business-documents/jodreports-cli.git</developerConnection>
+   </scm>
 
   <developers>
     <developer>
@@ -50,7 +50,7 @@
     <dependency>
       <groupId>de.lightful.businessdocs</groupId>
       <artifactId>jodreports-library</artifactId>
-      <version>${project.version}</version>
+      <version>0.9.1-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>org.slf4j</groupId>
@@ -62,10 +62,6 @@
     <plugins>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
-        <configuration>
-          <source>1.4</source>
-          <target>1.4</target>
-        </configuration>
       </plugin>
       <plugin>
         <artifactId>maven-assembly-plugin</artifactId>
