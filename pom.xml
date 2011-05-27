@@ -1,23 +1,38 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>net.sf.jodreports</groupId>
+
+  <parent>
+    <groupId>de.lightful.businessdocs</groupId>
+    <artifactId>library-parent</artifactId>
+    <version>0.5.4-SNAPSHOT</version>
+  </parent>
+
+  <groupId>de.lightful.businessdocs</groupId>
   <artifactId>jodreports-cli</artifactId>
+  <version>0.9.1-SNAPSHOT</version>
   <packaging>jar</packaging>
-  <name>JODReports CLI</name>
-  <version>2.4.1-SNAPSHOT</version>
+  <name>Business Docs :: JODReports :: CLI</name>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
   <description>JODReports command-line interface.</description>
   <url>http://jodreports.sourceforge.net/</url>
+
   <licenses>
     <license>
       <name>GNU Lesser General Public License, Version 2.1</name>
       <url>http://www.gnu.org/licenses/lgpl.html</url>
     </license>
   </licenses>
+
   <scm>
     <url>http://jodreports.svn.sourceforge.net</url>
     <connection>scm:svn:https://jodreports.svn.sourceforge.net/svnroot/jodreports/trunk/jodreports-cli</connection>
   </scm>
+
   <developers>
     <developer>
       <id>mnasato</id>
@@ -30,18 +45,19 @@
       <email>terry@polonious.com.au</email>
     </developer>
   </developers>
+
   <dependencies>
     <dependency>
-      <groupId>net.sf.jodreports</groupId>
-      <artifactId>jodreports</artifactId>
+      <groupId>de.lightful.businessdocs</groupId>
+      <artifactId>jodreports-library</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-jdk14</artifactId>
-      <version>1.6.1</version>
     </dependency>
   </dependencies>
+
   <build>
     <plugins>
       <plugin>
@@ -65,7 +81,7 @@
             </manifest>
           </archive>
         </configuration>
-		<executions>
+        <executions>
           <execution>
             <id>make-assembly</id>
             <phase>package</phase>
@@ -77,7 +93,5 @@
       </plugin>
     </plugins>
   </build>
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  </properties>
+
 </project>
