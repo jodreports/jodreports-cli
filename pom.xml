@@ -5,7 +5,7 @@
   <parent>
     <groupId>de.lightful.businessdocs</groupId>
     <artifactId>library-parent</artifactId>
-    <version>0.5.4-SNAPSHOT</version>
+    <version>0.5.5-SNAPSHOT</version>
   </parent>
 
   <groupId>de.lightful.businessdocs</groupId>
@@ -29,9 +29,9 @@
   </licenses>
 
   <scm>
-     <connection>scm:git:git@github.com:delightful-business-documents/jodreports-cli.git</connection>
-     <developerConnection>scm:git:git@github.com:delightful-business-documents/jodreports-cli.git</developerConnection>
-   </scm>
+    <connection>scm:git:git@github.com:delightful-business-documents/jodreports-cli.git</connection>
+    <developerConnection>scm:git:git@github.com:delightful-business-documents/jodreports-cli.git</developerConnection>
+  </scm>
 
   <developers>
     <developer>
