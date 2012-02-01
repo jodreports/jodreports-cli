@@ -3,23 +3,23 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>de.lightful.businessdocs</groupId>
-    <artifactId>library-parent</artifactId>
-    <version>0.5.5-SNAPSHOT</version>
+    <groupId>org.jodreports</groupId>
+    <artifactId>jodreports-parent</artifactId>
+    <version>3.0.0-SNAPSHOT</version>
   </parent>
 
-  <groupId>de.lightful.businessdocs</groupId>
+  <groupId>org.jodreports</groupId>
   <artifactId>jodreports-cli</artifactId>
-  <version>0.9.1-SNAPSHOT</version>
+  <version>3.0.0-SNAPSHOT</version>
   <packaging>jar</packaging>
-  <name>Business Docs :: JODReports :: CLI</name>
+  <name>JODReports :: Command Line Interface</name>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
   <description>JODReports command-line interface.</description>
-  <url>http://jodreports.sourceforge.net/</url>
+  <url>http://jodreports.org/</url>
 
   <licenses>
     <license>
@@ -29,8 +29,9 @@
   </licenses>
 
   <scm>
-    <connection>scm:git:git@github.com:delightful-business-documents/jodreports-cli.git</connection>
-    <developerConnection>scm:git:git@github.com:delightful-business-documents/jodreports-cli.git</developerConnection>
+    <url>https://github.com/jodreports</url>
+    <connection>scm:git:git@github.com:jodreports/jodreports-cli.git</connection>
+    <developerConnection>scm:git:git@github.com:jodreports/jodreports-cli.git</developerConnection>
   </scm>
 
   <developers>
@@ -44,13 +45,23 @@
       <name>Yongtai Liang</name>
       <email>terry@polonious.com.au</email>
     </developer>
+    <developer>
+      <id>ansgarkonermann</id>
+      <name>Ansgar Konermann</name>
+      <email>ansgar.konermann@googlemail.com</email>
+    </developer>
+    <developer>
+      <id>jacobf</id>
+      <name>Jacob Fahrenkrug</name>
+      <email>jacob.fahrenkrug@googlemail.com</email>
+    </developer>
   </developers>
 
   <dependencies>
     <dependency>
-      <groupId>de.lightful.businessdocs</groupId>
+      <groupId>org.jodreports</groupId>
       <artifactId>jodreports-library</artifactId>
-      <version>0.9.1-SNAPSHOT</version>
+      <version>3.0.0-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>org.slf4j</groupId>
@@ -72,7 +83,7 @@
           </descriptorRefs>
           <archive>
             <manifest>
-              <mainClass>net.sf.jodreports.cli.CreateDocument</mainClass>
+              <mainClass>org.jodreports.cli.CreateDocument</mainClass>
               <addClasspath>true</addClasspath>
             </manifest>
           </archive>
