@@ -3,23 +3,19 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>de.lightful.businessdocs</groupId>
-    <artifactId>library-parent</artifactId>
-    <version>0.5.5-SNAPSHOT</version>
+    <groupId>org.jodreports.poms</groupId>
+    <artifactId>jodreports-parent</artifactId>
+    <version>1-SNAPSHOT</version>
   </parent>
 
   <groupId>de.lightful.businessdocs</groupId>
   <artifactId>jodreports-cli</artifactId>
   <version>0.9.1-SNAPSHOT</version>
-  <packaging>jar</packaging>
-  <name>Business Docs :: JODReports :: CLI</name>
 
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  </properties>
+  <name>JODReports :: Command Line Interface</name>
+  <description>A command-line interface for JODReports</description>
 
-  <description>JODReports command-line interface.</description>
-  <url>http://jodreports.sourceforge.net/</url>
+  <url>http://www.jodreports.org/</url>
 
   <licenses>
     <license>
@@ -28,29 +24,34 @@
     </license>
   </licenses>
 
-  <scm>
-    <connection>scm:git:git@github.com:delightful-business-documents/jodreports-cli.git</connection>
-    <developerConnection>scm:git:git@github.com:delightful-business-documents/jodreports-cli.git</developerConnection>
-  </scm>
 
   <developers>
     <developer>
       <id>mnasato</id>
       <name>Mirko Nasato</name>
       <email>mirko@artofsolving.com</email>
+      <roles>
+        <role>founder</role>
+        <role>eremitus</role>
+      </roles>
     </developer>
     <developer>
       <id>terryliang</id>
       <name>Yongtai Liang</name>
       <email>terry@polonious.com.au</email>
     </developer>
+    <developer>
+      <id>ansgarkonermann</id>
+      <name>Ansgar Konermann</name>
+      <email>ansgar.konermann@googlemail.com</email>
+    </developer>
   </developers>
 
   <dependencies>
     <dependency>
-      <groupId>de.lightful.businessdocs</groupId>
+      <groupId>org.jodreports</groupId>
       <artifactId>jodreports-library</artifactId>
-      <version>0.9.1-SNAPSHOT</version>
+      <version>3.0.0-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>org.slf4j</groupId>
@@ -61,18 +62,14 @@
   <build>
     <plugins>
       <plugin>
-        <artifactId>maven-compiler-plugin</artifactId>
-      </plugin>
-      <plugin>
         <artifactId>maven-assembly-plugin</artifactId>
-        <version>2.2</version>
         <configuration>
           <descriptorRefs>
             <descriptorRef>jar-with-dependencies</descriptorRef>
           </descriptorRefs>
           <archive>
             <manifest>
-              <mainClass>net.sf.jodreports.cli.CreateDocument</mainClass>
+              <mainClass>net.jodreports.cli.CreateDocument</mainClass>
               <addClasspath>true</addClasspath>
             </manifest>
           </archive>
@@ -89,5 +86,10 @@
       </plugin>
     </plugins>
   </build>
+
+  <scm>
+    <connection>scm:git:git@github.com:jodreports/jodreports-cli.git</connection>
+    <developerConnection>scm:git:git@github.com:jodreports/jodreports-cli.git</developerConnection>
+  </scm>
 
 </project>
