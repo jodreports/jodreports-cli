@@ -15,17 +15,15 @@
 //
 package org.jodreports.cli;
 
+import freemarker.ext.dom.NodeModel;
+import org.apache.commons.io.FilenameUtils;
+import org.jodreports.templates.DocumentTemplate;
+import org.jodreports.templates.DocumentTemplateFactory;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.util.Properties;
-
-import org.jodreports.templates.DocumentTemplate;
-import org.jodreports.templates.DocumentTemplateFactory;
-
-import org.apache.commons.io.FilenameUtils;
-
-import freemarker.ext.dom.NodeModel;
 
 /**
  * Command line tool to create an ODT document from a template and a data file. <p> The data file can be in XML format or a simple

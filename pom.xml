@@ -5,18 +5,20 @@
   <parent>
     <groupId>org.jodreports.poms</groupId>
     <artifactId>jodreports-parent</artifactId>
-    <version>1-SNAPSHOT</version>
-    <relativePath>../jodreports-parent</relativePath>
+    <version>1</version>
   </parent>
 
-  <groupId>de.lightful.businessdocs</groupId>
+  <groupId>org.jodreports</groupId>
   <artifactId>jodreports-cli</artifactId>
-  <version>0.9.1-SNAPSHOT</version>
+  <version>3.0.0-SNAPSHOT</version>
 
   <name>JODReports :: Command Line Interface</name>
   <description>A command-line interface for JODReports</description>
-
   <url>http://www.jodreports.org/</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
 
   <licenses>
     <license>
@@ -24,7 +26,6 @@
       <url>http://www.gnu.org/licenses/lgpl.html</url>
     </license>
   </licenses>
-
 
   <developers>
     <developer>
@@ -46,13 +47,18 @@
       <name>Ansgar Konermann</name>
       <email>ansgar.konermann@googlemail.com</email>
     </developer>
+    <developer>
+      <id>jacobf</id>
+      <name>Jacob Fahrenkrug</name>
+      <email>jacob.fahrenkrug@googlemail.com</email>
+    </developer>
   </developers>
 
   <dependencies>
     <dependency>
       <groupId>org.jodreports</groupId>
       <artifactId>jodreports-library</artifactId>
-      <version>3.0.0-SNAPSHOT</version>
+      <version>3.0.0</version>
     </dependency>
     <dependency>
       <groupId>org.slf4j</groupId>
@@ -70,7 +76,7 @@
           </descriptorRefs>
           <archive>
             <manifest>
-              <mainClass>net.jodreports.cli.CreateDocument</mainClass>
+              <mainClass>org.jodreports.cli.CreateDocument</mainClass>
               <addClasspath>true</addClasspath>
             </manifest>
           </archive>
@@ -89,6 +95,7 @@
   </build>
 
   <scm>
+    <url>https://github.com/jodreports</url>
     <connection>scm:git:git@github.com:jodreports/jodreports-cli.git</connection>
     <developerConnection>scm:git:git@github.com:jodreports/jodreports-cli.git</developerConnection>
   </scm>
